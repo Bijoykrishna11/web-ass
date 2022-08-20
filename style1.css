@@ -1,0 +1,12 @@
+.photo {
+    position: absolute;
+
+}
+
+.toktok {
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+
+    background-color: cadetblue;
+}

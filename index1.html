@@ -1,0 +1,66 @@
+<!-- 1 on. questien answer -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car moveing</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body class="">
+    <div class="toktok"> <img id="i1" class="photo" src="pic/car-removebg-preview.png" alt=""><br></div>
+
+
+    <input type="button" onclick="move_img('up')" value="up"><br>
+
+    <input type="button" onclick="move_img('left')" value="left">
+
+    <input type="button" onclick="move_img('right')" value="right"><br>
+
+    <input type="button" onclick="move_img('down')" value="down">
+
+
+    <script>
+
+        function move_img(str) {
+            var step = 50;
+            switch (str) {
+                case 'down':
+                    var x = document.getElementById('i1').offsetTop;
+                    x = x + step;
+                    document.getElementById('i1').style.top = x + 'px';
+                    break;
+                case 'up':
+                    var x = document.getElementById('i1').offsetTop;
+
+                    x = x - step;
+                    document.getElementById('i1').style.top = x + 'px';
+
+                    break;
+                case 'left':
+                    var y = document.getElementById('i1').offsetLeft;
+
+                    y = y - step;
+                    document.getElementById('i1').style.left = y + 'px';
+
+                    break;
+                case 'right':
+                    var y = document.getElementById('i1').offsetLeft;
+
+                    y = y + step;
+                    document.getElementById('i1').style.left = y + 'px';
+
+                    break;
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

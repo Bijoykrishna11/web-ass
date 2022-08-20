@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> <meta charset="gbk">  
+<title> </title> 
+<style>  
+  *{margin: 0;padding: 0;}   
+  .main{width: 900px;margin: auto;}   
+  .topic{margin: 20px 0;box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);border-radius: 6px;}    
+  .t1 {padding: 10px;}    
+  .topic img{   
+       max-width: 100%;  
+    }  
+  .pbImageToTextHint{display: none;}  
+  .t2 li{list-style: none;border: 1px solid #ccc;}  
+   .answer-given-body p img{  
+            width: auto !important;height: auto!important;max-width: 100% !important;  
+    }  
+    .hidden {visibility:hidden; }    
+  </style>  
+</head>  
+<body>  
+<div class="main">    <h2> Question:<span class="title"></span></h2>    <div class="topic t1">        <div class="pbImages"><img src="" />        </div>    </div>    <div class="topic t2"><p>Program Plan Intro</p> <p>To design the circuit to make insertion tool active or inactive by proper positioning of PCB and the component to be inserted must be in chamber. Each of these conditions are indicated by a HIGH voltage whereas the insertion tool requires the LOW voltage to get activated.</p> <p>Explanation of Solution</p> <p>On the basis of the given information, there are three variables:</p> <ol style="list-style-type:decimal"> 	<li>PC board’s position (whether proper or improper)</li> 	<li>Component in the Chamber (whether present or absent)</li> 	<li>State of the insertion tool (whether active or inactive).</li> </ol> <p>Here, the state of PC board’s position and Component in the chamber determine the output state of the insertion tool to be active or inactive. So, the first two variables will be input variable whereas the third one i.e. state of the insertion tool will be output variable.</p> <p>Let us draw the table for all the cases possible with above three variables-</p> <table> 	<tbody> 		<tr> 			<td>Input 			<p>PC board’s position</p> 			</td> 			<td>Input 			<p>Component in the chamber</p> 			</td> 			<td>Output 			<p>State of the insertion tool</p> 			</td> 		</tr> 		<tr> 			<td>Not proper</td> 			<td>Absent</td> 			<td>Inactive</td> 		</tr> 		<tr> 			<td>Not proper</td> 			<td>Present</td> 			<td>Inactive</td> 		</tr> 		<tr> 			<td>Proper</td> 			<td>Absent</td> 			<td>Inactive</td> 		</tr> 		<tr> 			<td>Proper</td> 			<td>Present</td> 			<td>Active</td> 		</tr> 	</tbody> </table> <p>It is given that the intrusion tool is active when a LOW voltage is present.</p> <p>That means the following terms denote following type of Voltages-</p> <p>“Active”=LOW, “Inactive”= HIGH.</p> <p>“Not proper” =LOW and “Proper” = HIGH.</p> <p>And</p> <p>“Present” = HIGH and therefore “Absent” =LOW.</p> <p>Let us draw the truth table on the basis of the above description-</p> <table> 	<tbody> 		<tr> 			<td>Input 			<p>PC board’s position</p> 			</td> 			<td>Input 			<p>Component in the chamber</p> 			</td> 			<td>Output 			<p>State of the insertion tool</p> 			</td> 		</tr> 		<tr> 			<td>0</td> 			<td>0</td> 			<td>1</td> 		</tr> 		<tr> 			<td>0</td> 			<td>1</td> 			<td>1</td> 		</tr> 		<tr> 			<td>1</td> 			<td>0</td> 			<td>1</td> 		</tr> 		<tr> 			<td>1</td> 			<td>1</td> 			<td>0</td> 		</tr> 	</tbody> </table> <p>In the above truth table LOW=0 and HIGH=1.</p> <p>The above table is the truth table of NAND gate.</p> <p>Therefore,NAND gate will be required to implementthe desired logic circuit shown below-</p> <p><img alt="PC board
+position
+detector
+Insertion
+tool
+Component
+detector in the
+chamber
+" src="https://content.bartleby.com/tbms-images/9780132737968/Chapter-3/images/html_37968-3-51p_1.png"></p> <p>&nbsp;</p></div></div></html>

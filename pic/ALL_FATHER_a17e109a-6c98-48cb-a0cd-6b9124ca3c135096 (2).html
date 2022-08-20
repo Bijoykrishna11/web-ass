@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> <meta charset="gbk">  
+<title> </title> 
+<style>  
+  *{margin: 0;padding: 0;}   
+  .main{width: 900px;margin: auto;}   
+  .topic{margin: 20px 0;box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);border-radius: 6px;}    
+  .t1 {padding: 10px;}    
+  .topic img{   
+       max-width: 100%;  
+    }  
+  .pbImageToTextHint{display: none;}  
+  .t2 li{list-style: none;border: 1px solid #ccc;}  
+   .answer-given-body p img{  
+            width: auto !important;height: auto!important;max-width: 100% !important;  
+    }  
+    .hidden {visibility:hidden; }    
+  </style>  
+</head>  
+<body>  
+<div class="main">    <h2> Question:<span class="title"></span></h2>    <div class="topic t1">        <div class="pbImages"><img src="" />        </div>    </div>    <div class="topic t2"><p>Solution- From the given figure the condition of Ignition switch is as follows:</p> <p>HIGH = On</p> <p>LOW = Off</p> <p>and the condition of Light switch is as follows:</p> <p>HIGH = On</p> <p>LOW = Off</p> <p>Condition of Headlights is as follows:</p> <p>HIGH = Lights On</p> <p>LOW = Lights Off</p> <p>Writing all the input and output conditions in tabular form</p> <table> 	<tbody> 		<tr> 			<td> 			<p>Input</p> 			<p>Ignition switch</p> 			</td> 			<td> 			<p>Input</p> 			<p>Light switch</p> 			</td> 			<td> 			<p>Output Required</p> 			<p>Headlight control</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>LOW</p> 			</td> 			<td> 			<p>LOW</p> 			</td> 			<td> 			<p>LOW</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>LOW</p> 			</td> 			<td> 			<p>HIGH</p> 			</td> 			<td> 			<p>LOW</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>HIGH</p> 			</td> 			<td> 			<p>LOW</p> 			</td> 			<td> 			<p>LOW</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>HIGH</p> 			</td> 			<td> 			<p>HIGH</p> 			</td> 			<td> 			<p>HIGH</p> 			</td> 		</tr> 	</tbody> </table> <p>&nbsp;using HIGH = 1 and LOW = 0, we again make a table</p> <table> 	<tbody> 		<tr> 			<td> 			<p>Input</p> 			<p>Ignition switch</p> 			</td> 			<td> 			<p>Input</p> 			<p>Light switch</p> 			</td> 			<td> 			<p>Output Required</p> 			<p>headlight control</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>0</p> 			</td> 			<td> 			<p>0</p> 			</td> 			<td> 			<p>0</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>0</p> 			</td> 			<td> 			<p>1</p> 			</td> 			<td> 			<p>0</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>1</p> 			</td> 			<td> 			<p>0</p> 			</td> 			<td> 			<p>0</p> 			</td> 		</tr> 		<tr> 			<td> 			<p>1</p> 			</td> 			<td> 			<p>1</p> 			</td> 			<td> 			<p>1</p> 			</td> 		</tr> 	</tbody> </table> <p>Where,</p> <p><img src="https://media.cheggcdn.com/study/7f3/7f3bccbf-8b16-42bd-acca-d3947ad03065/3432-3-45p-i2.png" alt="HIGH = 1
+LOW = 0
+"></p> <p>&nbsp;From the above table we can see it is the truth-table for an AND gate.</p> <p>&nbsp;</p> <p>In order to&nbsp;turn off the headlights after 15 seconds time interval&nbsp; a circuit is to be implemented in which &nbsp;Ignition switch is off and Light switch is on. For this &nbsp;we need a timer which would produce a LOW after 15 seconds time interval. This will be the input to the headlight control circuit.</p> <p>We need an AND gate to operate when one of its inputs is LOW (Ignition switch off) and one input is HIGH (Light switch is on). So, we need an inverter at one of the inputs to the AND gate where the logic level is LOW (i.e. at the signal from ignition switch).</p> <p>The output of the AND gate activates the timer to produce a LOW signal after15 second, which is fed to the headlight control circuit.</p> <p>&nbsp;</p> <p>The circuit formed on the above information is as follows:</p> <p><img src="https://media.cheggcdn.com/study/6aa/6aab3f83-bb9f-4bfe-8dae-05a43111a695/3432-3-45p-i3.png" alt="HIGH = On
+LOW = Off
+Ignition
+switch
+Timer
+Light
+switch
+Headlight
+Control
+HIGH = On
+LOW = Off
+Timer produces a LOW output 15 s"></p></div></div></html>
